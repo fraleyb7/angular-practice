@@ -1,0 +1,12 @@
+<div *ngIf='work | async as workDetails'>
+  <div class='work-title'>{{workDetails.title}}</div>
+  <div class='work-details'>
+    Container Title: {{workDetails['container-title']}}<br/>
+    Volume: {{workDetails.volume ?? 1}}<br/>
+    URL: {{workDetails.URL}}<br/>
+    Subjects: {{workDetails.subject.join(', ')}}<br/>
+    Work Type: {{workDetails.type}}<br/>
+    Publisher: {{workDetails.publisher}}<br/>
+    Published: {{workDetails.published['date-parts'][0]}}
+  </div>
+</div>

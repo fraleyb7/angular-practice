@@ -1,0 +1,15 @@
+<div class='search-bar'>
+  <input class='search-input' #searchTerms placeholder="What are you looking for?"/>
+  <span class='button' (click)='searchForWorks(searchTerms.value)'>Search</span>
+</div>
+<ul class='works-list' *ngFor='let work of works | async'>
+  <li routerLink='/work-details/{{work.DOI}}' class='work'>
+    <div class='work-title'>{{work.title}}</div>
+    <div class='work-details'>{{work['container-title']}}: Volume {{work.volume ?? 1}}</div>
+  </li>
+</ul>
+<div class='paging-bar'>
+  <span [ngClass]='{ "button": true, "disabled": currentPage <= 1}' (click)='loadPreviousPage()'>Prev</span>
+  <span class='current-page'>{{currentPage}}</span>
+  <span class='button' (click)='loadNextPage()'>Next</span>
+</div>
