@@ -1,0 +1,11 @@
+# What libraries did you use? Why did you use them?
+For this assignment I simply used the libraries automatically installed by the angular cli when you create a new project. So just the various angular pieces along with rxjs and karma/jasmine for testing. I choose to stick with just these because I felt that I could accomplish the tasks without adding additional imports and because it's been a little while since I worked in Angular I wanted to try to build everything from scratch to help shake off the rust.
+
+# If you had more time, what further improvements or new features would you add?
+Given more time there are obviously a lot of things that could be added and improved. I would likely add sorting and filtering functionality to the list. There's a lot of clean up to be done with the code itself, fleshing out the types more and cleaning up/consolidating the css. I would also want to improve the unit testing and look into doing some integration or e2e testing as well. I'd want to further tweak the look of the UI for sure. Some places like the details page need a lot of improvement visually and given more time that's certainly something I'd want to address.
+
+# Which parts are you most proud of? And why?
+I am most proud getting the whole app completed including the prefered stories. As hectic as my week has been and considering I haven't worked in angular in over a year now I was pretty happy with how quickly I was able to shake of the rust and get back into the flow of things. As shown by my answer to the last question there are a lot of things I want to improve but given more time there are always things to improve.
+
+# Which parts did you spend the most time with? What did you find most difficult?
+The parts I spent the most time with are probably the creation of the base list page with the real data from crossref and then the setup for the unit testing. I think those are the parts I struggled with the most because as I stated previously it's been awhile since I've gotten to work in angular so it definitely took me a little bit to get back up the speed but as the rust shakes off I felt like things got easier and easier.

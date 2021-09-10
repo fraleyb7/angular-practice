@@ -9,7 +9,7 @@
   </li>
 </ul>
 <div class='paging-bar'>
-  <span [ngClass]='{ "button": true, "disabled": currentPage <= 1}' (click)='loadPreviousPage()'>Prev</span>
+  <span [ngClass]='{ "button": true, "disabled": currentPage <= 1}' (click)='loadPreviousPage(searchTerms.value)'>Prev</span>
   <span class='current-page'>{{currentPage}}</span>
-  <span class='button' (click)='loadNextPage()'>Next</span>
+  <span class='button' (click)='loadNextPage(searchTerms.value)'>Next</span>
 </div>

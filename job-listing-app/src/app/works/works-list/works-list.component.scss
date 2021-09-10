@@ -16,6 +16,9 @@
 
   .work-title {
     font: 16pt Verdana, sans-serif;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .work-body {
     font: 8pt Verdana, sans-serif;
@@ -71,5 +74,6 @@
     border-radius: 5px;
     background-color: inherit;
     border: 1px solid #666666;
+    color: white;
   }
 }

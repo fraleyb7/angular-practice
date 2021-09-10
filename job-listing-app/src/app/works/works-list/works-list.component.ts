@@ -21,12 +21,12 @@ export class WorksListComponent {
     this.works = this.worksService.getWorksList(this.currentPage, this.pageSize);
   }
 
-  loadNextPage(): void {
-    this.loadWorks(++this.currentPage, this.pageSize);
+  loadNextPage(searchTerms: string): void {
+    this.loadWorks(++this.currentPage, this.pageSize, searchTerms);
   }
 
-  loadPreviousPage(): void {
-    this.loadWorks(--this.currentPage, this.pageSize);
+  loadPreviousPage(searchTerms: string): void {
+    this.loadWorks(--this.currentPage, this.pageSize, searchTerms);
   }
 
   searchForWorks(searchTerms: string) {
